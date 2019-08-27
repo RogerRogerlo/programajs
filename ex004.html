@@ -1,0 +1,11 @@
+<head>
+    <title>exercicio 21 da lista</title>
+</head>
+    <script>
+        var Htrabalhadas = Number(window.prompt('quantas horas voce trabalhou? '))
+        var salariioM = Number(window.prompt('qual o valor do salario minimo? '))
+        var Hextra = Number(window.prompt('quantas horas a mais voce trabalhou? '))
+        var salarioPH = (salariioM/8)*Htrabalhadas
+        var salarioPHE = (salariioM/4)*Hextra
+        window.alert(`o seu salario final sera ${(salarioPH+salarioPHE).toLocaleString('pt-BR',{style:'currency',currency: 'BRL'})}`)
+    </script>

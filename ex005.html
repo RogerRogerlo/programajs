@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercicio 7 da lista</title>
+    <style>
+       input{
+           font: 20pt arial;
+           width: 180px;
+       }
+    </style>
+</head>
+<body>
+    <h1>Calculando peso</h1>
+    <p>Digite o seu peso</p>
+    <input type="number" name ="peso" id ="peso">
+    <input type="button" value="calcular" onclick="calcular()">
+    <div id = "res">Resultado é...</div> 
+    <div id = "res1"></div>
+    <script>
+        function calcular(){
+            var p = (document.getElementById("peso"))
+            var p1 = Number(p.value)
+            var resul = Number(p1+p1*15/100)
+            var resul1 = Number(p1-p1*20/100)
+            res.innerHTML = `se você engordar 15%, seu peso sera ${resul}Kg`
+            res1.innerHTML = `se você emagrecer 20%, seu peso sera ${resul1}Kg`
+        }
+    </script>    
+</body>
+</html>

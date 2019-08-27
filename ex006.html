@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercicio 24 da lista</title>
+    <style>
+        h1{
+            color: rgb(219, 219, 30)
+        }
+        button{
+            color: rgb(43, 95, 43)
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de Moedas</h1>
+    <p>Qual o valor que você levara em R$</p>
+    <input type="number" name="dinheiro" id="dinheiro">
+    <input type="button" value="Calcular" onclick="botao()">
+    <div id="resultados"></div>
+    <div id="resultados1"></div>
+    <div id="resultados2"></div>
+    <script>
+        function botao(){
+            var reais = (document.getElementById("dinheiro"))
+            var n1 = Number(reais.value)
+            var dolar = n1/1.80
+            var alemao = n1/2
+            var euro = n1/3.57
+            resultados.innerHTML= `Em Dólar US$${dolar.toFixed(2)}`
+            resultados1.innerHTML=` Em Marco Alemão DM${alemao.toFixed(2)}` 
+            resultados2.innerHTML=` Em Libra €${euro.toFixed(2)}` 
+        }
+    </script>
+</body>
+</html>
